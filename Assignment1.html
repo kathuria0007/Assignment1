@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1.</title>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    height: 100vh;
+    overflow: hidden;
+}
+
+            .container
+            {
+                border: 2px solid black;
+               border-collapse: collapse;
+               margin: 25px 0px;
+               min-width: 400px;
+               border-radius: 5px 5px 0 0;
+               overflow: hidden;
+               box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            }
+
+           .container thead tr{
+                    background-color: green;
+                    color: white;
+                    text-align: left;
+                    font-weight: bold;
+           }
+           .container th,
+           .container td{
+               padding: 12px 15px;
+           }
+           .container tbody tr{
+               border-bottom: 2px solid #dddddd;
+           }
+           .container tbody tr:nth-of-type(even){
+               background-color: #f3f3f3;
+           }
+           .container tbody tr:last-of-type{
+               border: 2px solid green;
+           }
+           .container tbody tr.active-row{
+               font-weight: bold;
+               color: green;
+           }
+         .btn1{
+             padding: 10px 10px;
+             margin:5px;
+         }
+         .btn2
+         {
+             padding: 10px 10px;
+             margin: 5px;
+         }
+         .i1,.i2,.i3,.i4{
+             padding: 10px 10px;
+         }
+    </style>
+  
+</head>
+<body>
+       
+   <div class="i1"> <input type="text" id="first" placeholder="Enter the First name"></div>
+   <div class="i2"><input type="text" id="last" placeholder="Enter the Last Name"></div>
+   <div class="i3"><input type="text" id="city" placeholder="Enter the City"></div>
+   <div class="i4"><input type="text" id="country" placeholder="Enter the Country"></div>
+   <br>
+   <button id="btn1">Add Row To Bottom </button>
+   <button id="btn2">Add Row To Top </button>
+   
+   
+    <table class="container">
+           
+                  <tr>
+                      <th>Serial No.</td>
+                      <th>First Name</td>
+                      <th>Last Name</td>
+                      <th>City</td>
+                      <th>Country</td>
+                  </tr>
+
+               
+                    <tr>
+                        <td>1</td>
+                        <td>Dheeraj</td>
+                        <td>Kathuria</td>
+                        <td>Rohtak</td>
+                        <td>India</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Neeraj</td>
+                        <td>Kumar</td>
+                        <td>Hisar</td>
+                        <td>India</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Bhuwan</td>
+                        <td>Mehta</td>
+                        <td>Coloumbia</td>
+                        <td>Sri Lanka</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sahil</td>
+                        <td>Molka</td>
+                        <td>Sydney</td>
+                        <td>Australia</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Deepanshu</td>
+                        <td>Rajput</td>
+                        <td>Toronto</td>
+                        <td>Canada</td>
+                    </tr>
+               
+    </table>
+    <script src="script.js"></script>
+ </body>
+</html>
